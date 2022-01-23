@@ -23,6 +23,9 @@ body {
 .page-wrapper {
 	padding-top: 20px;
 }
+// .blog-author-link {
+// 	font-family: 'Indie Flower';
+// }
 
 .card.fj-card {
 	// padding-top: 50px;
@@ -147,6 +150,12 @@ body {
 			text-transform: uppercase;
 			letter-spacing: 1px;
 			font-weight: bold;
+
+			a {
+				color: black;
+				font-weight: 700;
+				font-family: 'Indie Flower';
+			}
 		}
 
 		&-item {

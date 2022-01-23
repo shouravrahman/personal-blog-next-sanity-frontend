@@ -3,7 +3,9 @@ const BlogNavbar = () => {
 	return (
 		<Navbar className='fj-navbar fj-nav-base' bg='transparent' expand='lg'>
 			<Navbar.Brand className='fj-navbar-brand'>
-				<a href='#'>Filip-Jerga</a>
+				<a href='#' className='blog-author-link'>
+					Shourav-Rahman
+				</a>
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>

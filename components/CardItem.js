@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
 import { Card } from 'react-bootstrap'
 
-const CardItem = ({ title, subtitle, image, date, author }) => {
+const CardItem = ({ title, subtitle, link, image, date, author }) => {
 	return (
 		<Card className={`fj-card`}>
 			<div className='card-body-wrapper'>
@@ -28,7 +29,11 @@ const CardItem = ({ title, subtitle, image, date, author }) => {
 					<Card.Text>{subtitle}</Card.Text>
 				</Card.Body>
 			</div>
-			<a className='card-button'>Read More</a>
+			{link && (
+				<Link {...link}>
+					<a className='card-button'>Read More</a>
+				</Link>
+			)}
 		</Card>
 	)
 }
